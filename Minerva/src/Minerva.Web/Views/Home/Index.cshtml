@@ -1,0 +1,1029 @@
+﻿@inject ICultureProvider CultureProvider
+@{
+    ViewBag.Title = "Minerva Kitap Kulübü";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="@CultureProvider.DisplayLanguageCode">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>@ViewBag.Title</title>
+
+    <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link href="~/css/agency.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> İNDEKS <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Minerva Kitap Kulübü</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Biz Kim miyiz?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Mazide Kalanlar</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#announcements">Duyurular</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#join">Kulübümüze Katılın</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">@ViewBag.Motto</div>
+                <div class="intro-heading"></div>
+                <a href="#about" class="page-scroll btn btn-xl">Biraz Daha</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Minerva Kitap Kulübü</h2>
+                    <h3 class="section-subheading text-muted">We are the best, ignore the rest!</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">KİM</h4>
+                        <p class="text-muted text-justify">En basit anlatımla kitap okumayı seven, okudukları üzerine konuşmak isteyen bir grup insanız. Bireysel okuma alışkanlıkları dışında yeni türler yeni yazarlar tanıma maksadı güdüyor, her insandan öğrenilebilecek değerli fikirler olduğuna inanıyoruz. Bir yandan farklı kültürel etkinliklere de katılım sağlamaya çalışıp, düzenli aralıklarla kitap tartışma toplantıları düzenliyoruz.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">NE</h4>
+                        <p class="text-muted text-justify">Tüm seçim süreçleri bitince kitaplarımızı okuyor; her kitabın kendi toplantı saati ve gününde toplanıp kitabın üstüne olabilecek en saygılı biçimde konuşuyoruz. Kitap tema ve yazar ekseninde karşılıklı görüş alışverişinde bulunuyoruz. Tabi bunu yaparken keyif almak ve maksimum faydayı sağlamak temel amaç.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">NEDEN</h4>
+                        <p class="text-muted text-justify">Çünkü biz; bir kitabı okuduğunda gözünde canlanan evreni başkaları ile paylaşmak isteyen ve aynı şekilde kitabı okuyan başka birinin gözünde canlanmış olan evrene misafir olmayı seven ve hatta o evreni keşfetmek isteyen maceraperest ruhlu kitap kurtlarıyız. Ufkumuzu genişletmek ve yeni diyarları hep birlikte keşfetmek istiyoruz.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-gears fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">NASIL</h4>
+                        <p class="text-muted text-justify">Üyelerimizden tema önerilerini topluyor, oyluyor ve 2 ay boyunca okuyacağımız temayı belirliyoruz. İkinci aşamada yine üyelerimizden gelen temaya uygun kitap önerileri arasından, okuyacağımız 4 kitabı oy çoğunluğu ile belirliyoruz. Yaşasın demokrasi ! </p>
+                    </div>     
+                    <div class="col-xs-12 col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-map fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">NEREDE</h4>
+                        <p class="text-muted text-justify">Kadıköy’de Minerva Kitap Kulübü’nü nerede toplandığını kime sorsanız size memnuniyetle tarif edeceklerdir. :)</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">NE ZAMAN</h4>
+                        <p class="text-muted text-justify">Herhangi bir olağanüstü durum olmadığı sürece iki haftada bir Pazar günleri bir araya geliyoruz.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Ne okundu? Ne yaşandı?</h2>
+                    <h3 class="section-subheading text-muted">Şu sıralar modumuz böyle:</h3>
+                </div>
+            </div>
+            <div class="row" id="divThemes">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/german.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Alman-Avusturya Edebiyatı</h4>
+                        <p class="text-muted">Ekim-Kasım</p>
+                    </div>
+                </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/magical.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Büyülü Gerçekçilik</h4>
+                            <p class="text-muted">Ağustos-Eylül</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/theatre.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Tiyatro Eserleri</h4>
+                            <p class="text-muted">Temmuz-Ağustos</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/viking.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>İskandinav Edebiyatı</h4>
+                            <p class="text-muted">Haziran-Temmuz</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/realism.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Realizm</h4>
+                            <p class="text-muted">Mayıs-Haziran</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/fantastic.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Fantastik Kurgu</h4>
+                            <p class="text-muted">Nisan-Mayıs</p>
+                        </div>
+                 
+                    </div>
+                    <div class="show-more" id="divShowAll">
+                        <i class="fa fa-chevron-down"></i>
+                        HEPSİNİ GÖSTER
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="hidden-topics">
+                        <div class="col-md-4 col-md-offset-4  col-sm-6 portfolio-item">
+                            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/japon.png" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Uzakdoğu Edebiyatı</h4>
+                                <p class="text-muted">Mart-Nisan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="announcements">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Duyurular</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            @*<div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2009-2011</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>March 2011</h4>
+                                    <h4 class="subheading">An Agency is Born</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>December 2012</h4>
+                                    <h4 class="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2014</h4>
+                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>
+                                    Be Part
+                                    <br>Of Our
+                                    <br>Story!
+                                </h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>*@
+        </div>
+    </section>
+
+    <section id="join" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Kulübümüze Katılın</h2>
+                    <h3 class="section-subheading text-muted">
+                        Yeni üye alımı belirli tarihlerde yapılmaktadır. Formumuzu doldurduğunuz taktirde, bir sonraki dönem için size geri dönüş yapılacaktır.
+                        <br />
+                        (Her dönem için referanslı alım mevcuttur.)
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <a href="#formModal" class="portfolio-link" data-toggle="modal" style="text-align: center;">
+                    <h3>Üye Başvuru Formu İçin Buraya Tıklayınız</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Bize Ulaşın</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Adınız *" id="name" required data-validation-required-message="Lütfen adınızı giriniz.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email Adresiniz *" id="email" required data-validation-required-message="Lütfen email adresinizi giriniz.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Telefon Numaranız *" id="phone" required data-validation-required-message="Lütfen telefonunuzu numaranız giriniz.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Mesajınız *" id="message" required data-validation-required-message="Lütfen mesajınızı giriniz."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Gönder Gitsin</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-4 col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+    <!-- Portfolio Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body books">
+                                <!-- Project Details Go Here -->
+                                <h2 class="">Alman-Avusturya Edebiyatı</h2>
+
+                                <p class="item-intro text-muted">Ekim-Kasım</p>
+                                <div class="row book">
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/musil.png" alt="Öğrenci Törless'in Bunalımları" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Öğrenci Törless'in Bunalımları</h3>
+                                            <p class="author">Robert MUSIL</p>
+                                            <p class="text-justify">Kendisi buna sıla özlemi, anne ve babasına yeniden kavuşma arzusu gözüyle bakıyordu. Oysa gerçekte çok daha belirsiz ve karmaşık bir duyguydu bu. Çünkü özlemini çektiği anne ve babasının hayalinin bu duyguda gerçekte hiç payı yoktu artık. Demek istediğim, sadece bellekle sınırlı kalmayıp sevilen kimseye karşı insanın içinde beliren, bütün duygulara seslenip bütün duygularda kendini açığa vuran, dolayısıyla sevilen kişinin suskun ve gözle görülmez varlığını yanı başında hissetmeksizin hiçbir şey yapılamayan somut bir anımsayıştır. Modern dünya edebiyatının öncülerinden Robert Musil, yalnızca insan ruhunun inceliklerini eşsiz gözlemlerle anlatmamış, roman diline de yenilikler getirmiştir. </p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/hesse.png" alt="Bozkırkurdu" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Bozkırkurdu</h3>
+                                            <p class="author">Hermann HESSE</p>
+                                            <p class="text-justify">Hermann Hesse'nin 1927 yılında yayımlanan romanı Bozkırkurdu, yazarın diğer romanlarında merkeze aldığı konuları, duyguları, sıkıntıları inceltilmiş estetik bir dille sunması bakımından başyapıt niteliğindedir. Hesse'nin sorgulanmaksızın kabul edilen değerlere, manası idrak edilmeden dayatılan normlara itirazını konu alan roman, konfordan vazgeçmemek adına sürdürülen basit ve sıradan hayatlardan yakınmaktadır. Varoluşsal bunalımların, kişilik buhranlarının karamsar atmosferinin dışına taşan metin, verili dünyanın değiştirilebileceğine dair bir umudun da anlatısıdır. Bozkırkurdu umut ile melankoli, uyum ile itiraz, düzen ile kaos arasında gidip gelen bir karakterdir. Kişiliği, duyguları ve tercihleri sıklıkla ikili tercihler arasında kalan başkahraman Harry Haller, tümüyle kaçınılmaz bir çöküştense, umutla iyileştirilebilecek bir dünyaya dair inancı korumaktadır. </p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/castellio.png" alt="Vicdan Zorbalığa Karşı" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Vicdan Zorbalığa Karşı</h3>
+                                            <p class="author">Stefan ZWEIG</p>
+                                            <p class="text-justify">Vicdan Zorbalığa Karşı ya da Castellio Calvin'e, okuru Fransız Reformcu Jean Calvin’in diktatörlüğünün hüküm sürdüğü XVI. yüzyıl Cenevre’sine götürür. Calvin’in farklı görüşlere gösterdiği tahammülsüzlük, hümanist din adamı Miguel Serveto’nun resmî öğretiye ters düşen görüşleri nedeniyle ölüm cezasına çarptırılmasıyla zirveye tırmanır. Tam da bu noktada Sebastian Castellio, Calvin’in karşısında tarih sahnesindeki yerini alır.Bu kitap, Zweig'ın, kendi yaşamını belirleyecek nasyonal sosyalizm de dahil olmak üzere totaliter rejimlere yönelttiği bir eleştiri olarak da anlaşılabilir. Katı ideolojilerin beraberinde getirdiği tehlikelerin göz önüne serildiği, insanca yaşamak için düşünce özgürlüğünün, hoşgörünün altının çizildiği Vicdan Zorbalığa Karşı ya da Castellio Calvin'e, bu özellikleriyle evrensel nitelikte.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/malina.png" alt="Malina" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Malina</h3>
+                                            <p class="author">Ingeborg BACHMANN</p>
+                                            <p class="text-justify">Ingeborg Bachmann’ın başyapıtı Malina, her şeyin iç dünyaların yoğunluğunda yaşandığı, mutlak aşkın ve birey olma savaşımının romanı. Bachmann’ın sarsıcı bir saptamayla ortaya koyduğu gibi: “Faşizm, atılan ilk bombalarla başlamaz, her gazetede üzerine bir şeyler yazılabilecek olan terörle de başlamaz. Faşizm, insanlar arasındaki ilişkilerde başlar, iki insan arasındaki ilişkide başlar...”"Bir gün gelecek, insanların siyah ama altın gibi parlayan gözleri olacak; onlar, güzelliği görecekler, psiliklerden arınmış ve tüm yüklerden kurtulmuş olacaklar, havalara yükselecekler, suların dibine inecekler, sıkıntılarını ve ellerinin nasır bağlamış olduğunu unutacaklar. Bir gün gelecek, insanlar özgür olacaklar, bütün insanlar özgür olacaklar, kendi özgürlük kavramları karşısında da özgür olacaklar. Bu, daha büyük bir özgürlük olacak, ölçüsüz olacak, bütün bir yaşam boyunca sürecek..."</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body books">
+                                <!-- Project Details Go Here -->
+                                <h2 class="">Büyülü Gerçekcilik Teması</h2>
+
+                                <p class="item-intro text-muted">Ağustos-Eylül</p>
+                                <div class="row book">
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/borges.png" alt="Ficciones Hayaller ve Hikayeler" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Ficciones Hayaller ve Hikayeler</h3>
+                                            <p class="author">Jorge Luis BORGES</p>
+                                            <p class="text-justify">Borges okumaya başlamak için en iyi eser olarak kabul edilen Ficciones, yazarın en sevilen kısa hikâye derlemelerinden biridir.Borges'in en verimli döneminde yazdığı hikâyelerden oluşan Ficciones'te gerçeküstü ve büyülü âlemler gizlidir. Sınırsızlık ve sarmal düzenler teması üzerine kurulu bu metinlerde, yazar okurunu Cervantes'ten Baudelaire'e, James Joyce'tan Louis-Ferdinand Céline'e uzanan bir yelpazede edebiyat tarihi gezintisine çıkarır. Her biri yüzlerce sayfa okumuşuz, evrenler içinde gezinmişiz izlenimi veren öykülerde, iç içe geçmiş dünyalardan oluşan düşsel bir evren anlatılır. Borges bozulma ve yıkılmanın izini sürerken, bize dünyanın inanılmaz karmaşık doğasını kavramak için ipuçları sunar.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/calvino.png" alt="Görünmez Kentler" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Görünmez Kentler</h3>
+                                            <p class="author">Italo CALVINO</p>
+                                            <p class="text-justify">Modern dünyanın masal anlatıcısı Italo Calvino'nun Türkçede uzun süredir görünmeyen kitabı Görünmez Kentler, tekrar elimizin altında... Kubilay Han'ın atlasında yolculuk eden Marco Polo... Batının doğuyu gören gözünün kurduğu hayaller bir yanda, modern kentin içinden çıkılmazlığı ve geleceği öte yanda..."Kitap bir alan; okur içine girmeli, dolanmalı, belki kendini kaybetmeli, ama belli bir noktada bir çıkış hatta birçok çıkış bulmalı. Kitap, dışarı çıkabilmek için bir yola koyulma olanağı."Okur, kitabı eline aldığında, yazarın kentleri arasında dolanacağından, önüne altın harflerle sunulan olasılıkları yutacağından, sonunda okuduklarını kendi zihnindeki ideal kentlere ekleyeceğinden emin olmalı. </p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/saramago.png" alt="Baltasar ile Blimunda" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Baltasar ile Blimunda</h3>
+                                            <p class="author">Jose SARAMAGO</p>
+                                            <p class="text-justify">18. yüzyılda, savaşların ve salgın hastalıkların sarstığı Portekiz'de geçen Baltasar ile Blimunda'da, Nobel ödüllü yazar José Saramago, etkileyici bir aşkı anlatırken tarihsel gerçeklerle dokunmuş iki farklı hikâyeyi de romana ustalıkla katıyor: Bekledikleri veliahtın doğumunu kutlamak için manastır inşa ettiren kraliyet ailesi; insanın uçmasını sağlayacak ilk aleti, Passarola'yı yapmaya çalışan Peder Bartolomeu; ve iki âşık: sol kolunu savaşta kaybeden Baltasar ile sıradan insanların göremediklerini görebilen, annesi cadı diye engizisyon tarafından yakılan güzel Blimunda. </p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/murakami.png" alt="Sputnik Sevgilim" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Ficciones Hayaller ve Hikayeler</h3>
+                                            <p class="author">Haruki MURAKAMİ</p>
+                                            <p class="text-justify">
+                                                Sen benim bir parçamsın... Ben âşık oldum. Şüphe yok. Buz soğuktur, gül kırmızı. Ve bu aşk beni sürükleyip bir yerlere götürmeye çalışıyor; öyle güçlü bir akıntı ki ondan kendimi korumam neredeyse olanaksız. Ama artık dönüş yok. Kendimi bu akıntıya bırakmak dışında bir şey yapamam. Yanıp kül olsam da, yok olup gitsem de. 
+                                                Japonya'dan bir Yunan adasına uzanan, üç kişiyi birbirine kenetleyen büyüleyici bir aşkın hikâyesi. Haruki Murakami'den düşlerinize sızacak bir roman...
+                                            </p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body books">
+                                <!-- Project Details Go Here -->
+                                <h2 class="">Tiyatro Eserleri</h2>
+
+                                <p class="item-intro text-muted">Ağustos-Eylül</p>
+                                <div class="row book">
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/sophokles.png" alt="Kral Oidipus" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Kral Oidipus</h3>
+                                            <p class="author">SOPHOKLES</p>
+                                            <p class="text-justify">Kral Oidipus, Antigone ile birlikte Sofokles'in başyapıtıdır. Yaşamı üstün başarılarla geçen Oidipus'un yazgısıdır: Babası öldürecek, annesiyle evlenecek ve ondan çocukları olacak!.. Kulağına ulaşan bir uğursuz yazgıdan kurtulmak için evinden yurdundan kaçar. Düğüö çözücü Oidipus, bir dedektif gibi zamanı eşeler, geçmişini sorgular, kendini köşeye sıkıştırır; aradığı suçlu kendisidir.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/othello.png" alt="Othello " class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Othello </h3>
+                                            <p class="author">William SHAKESPEARE</p>
+                                            <p class="text-justify">Othello ile Shakespeare'in öteki üç büyük tragedyası, Hamlet, Macbeth ve Kral Lear arasında önemli farklar vardır. Othello, ne Lear gibi bir kral, ne Hamlet gibi bir prens, ne de Macbeth gibi kral olma ihtirası olan ve bu ihtirası gerçekleşen bir soylu. Othello sadece Venedik devletinin hizmetinde bir komutandır. Othello, öteki üç büyük tragedyadan farklı olarak daha "dünyasal" bir oyundur. Ağırlıklı konuları, aşk, evlilik, kıskançlık ve kötülük üstünedir. Her dört tragedyada ortak olarak (genel olarak tragedya türünde ve özellikle Shakespeare'in tüm tragedyalarında olduğu gibi) farklı boyutlarıyla ölüm işlenmektedir.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/godot.png" alt="Godot’yu Beklerken" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Godot’yu Beklerken</h3>
+                                            <p class="author">Samuel BECKETT</p>
+                                            <p class="text-justify">Godot'yu Beklerken 1948 yılında Fransızca olarak yazıldı ve 1953'te Paris'de sahneye kondu. Zamanla ülke çapında bir ün kazandı. 1954 yılında Beckett tarafından bazı değişikliklerle İngilizceye çevrildi ve başka ülkelerde de sahnelenmeye başladı. Avangard olarak nitelenmesine karşın hızla klasikleşti. Oyunun varoluş sancıları çeken kahramanları, yolları kesiştiğinde birbirleriyle iletişim kurmaya çalışırlar. Her gün yinelenen bu ritüelde bellek işlevinin yerine getiremeyince de gerçekliğin kesinliğinden uzaklaşmaya başlarlar. Kimilerine göre tüm zamanların en iyisi olan bu oyun, 21. yüzyılda da kafamızda soru işaretleri bırakmaya devam ediyor.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/oguz.png" alt="Oyunlarla Yaşayanlar" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Oyunlarla Yaşayanlar</h3>
+                                            <p class="author">Oğuz ATAY</p>
+                                            <p class="text-justify">
+                                                Sen benim bir parçamsın... Ben âşık oldum. Şüphe yok. Buz soğuktur, gül kırmızı. Ve bu aşk beni sürükleyip bir yerlere götürmeye çalışıyor; öyle güçlü bir akıntı ki ondan kendimi korumam neredeyse olanaksız. Ama artık dönüş yok. Kendimi bu akıntıya bırakmak dışında bir şey yapamam. Yanıp kül olsam da, yok olup gitsem de. 
+                                                Japonya'dan bir Yunan adasına uzanan, üç kişiyi birbirine kenetleyen büyüleyici bir aşkın hikâyesi. Haruki Murakami'den düşlerinize sızacak bir roman...
+                                            </p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body books">
+                                <!-- Project Details Go Here -->
+                                <h2 class="">İskandinav Edebiyatı</h2>
+
+                                <p class="item-intro text-muted">Haziran-Temmuz</p>
+                                <div class="row book">
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/ibsen.png" alt="İki Oyun/Brand-Peer Gynt" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>İki Oyun/Brand-Peer Gynt</h3>
+                                            <p class="author">Henrik IBSEN</p>
+                                            <p class="text-justify">Henrik İbsen (1828-1906): 1850'lerden ölümüne kesintisiz üretimiyle dünya tiyatrosunun olduğu kadar Hedda Gabler'den Bir Halk Düşmanı'na bu oyunların pek çoğuyla sinemanın da vazgeçilmezleri arasında yer almıştır. Ölümünün yüzüncü yılı anısına elinizdeki ciltte bir araya getirilmiş Brand (1866) ve Peer Gynt (1867) ise İbsen'in hem en karakteristik hem de ülkemizde de en çok sahnelenmiş oyunlarındandır.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/knut.png" alt="Açlık" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Açlık</h3>
+                                            <p class="author">Knut HAMSUN</p>
+                                            <p class="text-justify">Norveçli büyük romancı Knut Hamsun'un kişiliğini ve ününü oluşturan en büyük romanı Açlık'tır. Ünlü bir yazar olma sevdasıyla yanıp tutuşurken, bir yanda da açlıkla pençeleşen bir gencin, gerçekten duygulandırıcı öyküsü olan bu kitap, dünya edebiyatının başyapıtları arasında anılmaktadır. Behçet Necatigil'in usta kaleminden, örnek bir çeviri okuyacaksınız bu ciltte.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/soren.png" alt="Baştan Çıkarıcının Günlüğü" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Baştan Çıkarıcının Günlüğü</h3>
+                                            <p class="author">Soren KIERKEGAARD</p>
+                                            <p class="text-justify">"Aşka dair yazılanların arasından çetrefil, nüfuz etmesi hiç de kolay olmayan bir metin olarak sıyrılıyor Baştan Çıkarıcının Günlüğü. Kierkegaard, cinsel bir başarısızlığın nasıl pedagojik bir başarıya çevrilebileceğini ustalıkla ortaya koymakla kalmıyor, yaşamını tümüyle etkileyen Regine Olsen ile yaşadığı aşkın etraflı bir portresini de sunuyor. Evlilik sorunları, etik ve estetik olanın karşıtlığı, ümitsizlik ve Hıristiyanlığın katılıkları Kierkegaard'ın metninin üzerinde durduğu başlıkları oluşturuyor.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/portakal.png" alt="Portakal Kız" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Portakal Kız</h3>
+                                            <p class="author">Jostein GAARDER</p>
+                                            <p class="text-justify">"Hayatı seçen ölümü de seçer." Georg, ölümünden 11 yıl sonra babasının kendisine yazmış olduğu uzun bir mektupta zor bir soruyla karşı karşıya kalır. "Eğer sana seçme şansı verselerdi, kısacık hayatın ardından öleceğini bile bile yaşamayı kabul eder miydin?" Portakal Kız Sofie'nin Dünyası'nın yazarı Jostein Gaarder'in gençler için yazdığı yeni kitabı.... Georg 4 yaşındayken kaybettiği babasından aldığı veda mektubuyla geçmişe bir yolculuğa çıkar. Ona gizemli Portakal Kız'la yaşadığı aşk hikayesini uzun uzun anlatmıştır. Ancak okudukça mektubun, onun geleceğiyle ilgili olduğunu kavrar. Babası onun sorularına artık cevap veremeyecektir, ama sevgiye, hayata ve ölüme dair doğru sorular sormasını sağlayacaktır.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body books">
+                                <!-- Project Details Go Here -->
+                                <h2 class="">Realizm</h2>
+
+                                <p class="item-intro text-muted">Mayıs-Haziran</p>
+                                <div class="row book">
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/balzac.png" alt="Goriot Baba" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Goriot Baba</h3>
+                                            <p class="author">Honoré de BALZAC</p>
+                                            <p class="text-justify">Henrik İbsen (1828-1906): Şerif Hulûsi çevirisi,Peter Brooks'un önsözü,Marcel Proust ve Harry Levin'in sonsözleriyle.Yazar ve dönem kronolojisiyle. Goriot Baba Restorasyon dönemi Fransası'na damgasını vuran burjuva hayatının toplumda yarattığı trajediyi gerçekçi bir üslupla resmediyor.Realist romanın en iyi örneklerinden biri kabul edilen Goriot Baba, Balzac'ın "İnsanlık Komedyası" dizisindeki karakterlerin bütünlüğünü sağlayan en önemli eserlerinden biridir. İlk defa 1835'te okurla buluşan roman, ilk bakışta birbirinden hayli farklı görünen ama aslında hepsi burjuva olma hayaliyle hayatlarına yön vermiş üç karakterin yollarını Madam Vauquer'in pansiyonunda kesiştiriyor.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/dostoyevski.png" alt="İnsancıklar" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>İnsancıklar</h3>
+                                            <p class="author"> Fyodor M. DOSTOYEVSKİ</p>
+                                            <p class="text-justify">Dostoyevski'nin ilk romanı olan İnsancıklar yayımlandığında büyük övgüyle karşılanmış, edebi bir dehanın habercisi olarak görülmüştü.İnsancıklar, St. Petersburg'da bir devlet dairesinde çalışan orta yaşlı ve alçak gönüllü kâtip Makar Devuşkin ile uzaktan akrabası, yirmili yaşlarının başında genç bir kadın olan Varvara Dobroselova arasındaki mektuplaşmalardan oluşan bir eserdir. Dostoyevski'nin henüz 24 yaşındayken kaleme aldığı; yoksulluk, dostluk ve sanat sevgisi gibi temalarla örülü bu roman, dönemin eleştirmenlerince adeta göklere çıkarılarak yazarın edebiyat çevrelerine bir yıldız gibi girmesini sağlamış ve çok parlak bir "toplumsal roman" olarak nitelendirilmişti.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/flaubert.png" alt="Madam Bovary" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Madam Bovary</h3>
+                                            <p class="author">Gustave FLAUBERT</p>
+                                            <p class="text-justify">"Madam Bovary, 19. yüzyıl Fransız kadınının kıstırılmış hayatını ve iç dünyasını oldukça şeffaf bir şekilde ele alırken, dönemin kadın erkek ilişkilerine de ayna tutan bir başyapıt. Vasat bir doktorla evlendikten sonra boğucu taşra yaşamı içinde sıkışıp kalan genç ve güzel Madam Bovary, mutsuzluğu bir kader olarak kabul etmeye razı olmaz. Büyük hayalleri, hayattan büyük beklentileri vardır; okuduğu romanlardaki tutkunun ve romantik fantezilerin özlemiyle yaşar ve aradığı ideal aşkı bulmak için çıktığı yolda hiçbir fedakârlıktan kaçınmaz. Madam Bovary'nin bu mücadelesini ve sürüklendiği çıkmazı anlatan roman, tutkulu bir hikâyenin gerisinde evlilik, cinsellik ve zenginlik kavramlarını sorguluyor.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/london.png" alt="Deniz Kurdu" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Deniz Kurdu</h3>
+                                            <p class="author">Jack LONDON</p>
+                                              <p class="text-justify">Jack London'ın bütün eserlerine bir simgeci natüralizm örneği olan Deniz Kurdu ile devam ediyoruz. Varlıklı bir aileden gelen Humphrey Van Weyden, geçirdiği deniz kazasının ardından Hayalet adlı uskunanın kaptanı Wolf Larsen tarafından kurtarılır. Barışçıl bir "beyefendi" olarak, iradesi dışında Larsen'in hizmetine girmesiyle kendini şiddet dolu "gerçek dünya"da bulacak; bu deneyim onu elitist bir entelektüelden, cesur bir eylem adamına dönüştürecektir.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body books">
+                                <!-- Project Details Go Here -->
+                                <h2 class="">Fantastik Kurgu</h2>
+
+                                <p class="item-intro text-muted">Nisan-Mayıs</p>
+                                <div class="row book">
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/lovercraft.png" alt="Cthulhu’nun  Çağrısı" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Cthulhu’nun  Çağrısı</h3>
+                                            <p class="author">H. P. LOVECRAFT</p>
+                                            <p class="text-justify">Henrik İbsen (1828-1906): Lovecraft'ın neden korku edebiyatının ustası olarak anılması gerektiğini gösteren; yabancılığın, dehşetin, tekinsizliğin anlatıldığı toplam sekiz öykü var bu kitapta. Korku ancak gördüğümüzde bilebildiğimiz bir şey midir? Yoksa bilmediğimizi gördüğümüz şey midir? Belli ki Lovecraft bunu sorguluyordu bu öyküleri yazdığı sırada. Hep korkularımızdan ve bilmediklerimizden bahsetmeye çalıştı. Çalıştı diyoruz, çünkü asla tam olarak bahsedilemeyeceğini biliyordu. Tıpkı bu öykülerde olduğu gibi, dehşeti tarif etmek mümkün değildi. Tarif eden ya mezarlığa düştü ya da akıl hastanesine; ya müzisyen oldu ya da ressam; ya aynaya baktığında başkasını gördü ya da denizin dibinde buldu kendisini. Bu kitap bir dehşet davetiyesi, bir delilik güzellemesi. Bu, Lovecraft'ın çağrısı… </p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/ursula.png" alt="Mülksüzler" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Mülksüzler</h3>
+                                            <p class="author">Ursula K. Le GUIN</p>
+                                            <p class="text-justify"> Ursula K. Le Guin, Mülksüzler eserinde kendilerini dünyaya Odocu diye tanıtan bir topluluğu kaleme alıyor. Odocular, isimlerini eserde geçen olaylardan kuşaklar önce yaşamış olan Odo isimli birisinden alıyor. Odo, romandaki olaylardan çok önce yaşadığı için romandaki olay örgüsünde yoktur. Ancak ismi geçtikçe anılıyor. Odo romandaki olay örgüsünde yer almasa da bütün olayların başlangıç noktası Odo’ya çıkıyor. Yazar, bu eserinde anarşizm üzerine dikkatleri üzerine çekmeyi başaran bir bilim kurgu ele almıştır. Yazar, eserinde öyle bir olay örgüsü oluşturmuş ki okurların dünya görüşü ne olursa olsun bu olaylardan derin anlamlar çıkarabiliyor.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/ihsan.png" alt="Kitab-ül Hiyel" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Kitab-ül Hiyel</h3>
+                                            <p class="author">İhsan Oktay ANAR</p>
+                                            <p class="text-justify">"Puslu Kıtalar Atlası'yla birçok okuru şaşırtan ve sevindiren İhsan Oktay Anar'ın ikinci romanı Kitab-ül Hiyel, "eski zaman mucitlerinin inanılmaz hayat öyküleri"ni anlatıyor. Yafes Çelebi, Calud ve Lalezar Necef Bey'den Angilidis Efendi'ye, Samur ve Yağmur Çelebiler'den Uzun İhsan Efendi'ye bir sürü mucit, hiyelkar, aktarıcı, "rivayet edici", mağdur, sarhoş, meyhaneci, kahveci... Okuyanın okumayanlara kolay anlatamayacağı ama insanın birileriyle paylaşmak isteyeceği romanlardan, Kitab-ül Hiyel.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/neil.png" alt="Yıldız Tozu" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Yıldız Tozu</h3>
+                                            <p class="author">Neil GAIMAN</p>
+                                            <p class="text-justify">"Mucizelerle dolu bir hikaye... Gaiman yeni gelenekte bir peri masalı ortaya çıkarmak için son derece zengin bir dil, doğal bir bilgelik, iyi bir mizah ve biraz da karanlık kullanıyor."Kadim İngiltere'nin huzurlu tarlaları ve çayırlarında, bir granit çıkıntısının üzerinde 600 yıldır duran küçük bir köy vardır. Hemen doğuda köye ismini veren upuzun bir taş duvar yükselir. İşte burada, Duvar Köyü'nde, genç Tristran Thorn kalbini, akıllara zarar veren güzellikteki Victoria Forester'a kaptırır. Ve işte burada, yepyeni bir Ekim arifesinde, Tristran aşkına bir söz verir - bu öyle hızlı edilmiş bir yemindir ki, onu duvardaki tek gedikten dışarı, çayırların ötesine ve hayatının en heyecanlı macerasına yollayacaktır. </p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body books">
+                                <!-- Project Details Go Here -->
+                                <h2 class="">Fantastik Kurgu</h2>
+
+                                <p class="item-intro text-muted">Mart-Nisan</p>
+                                <div class="row book">
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/kazuo.png" alt="Beni Asla Bırakma" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Beni Asla Bırakma</h3>
+                                            <p class="author">Kazuo ISHIGURO</p>
+                                            <p class="text-justify">Yatılı okul Hailsham'ın öğrencileri, bahçe duvarının arkasındaki karanlık ormandan çok korkarlar. Hafta sonları veya tatillerde evlerine gitmez., Hailsham'dan önceki yaşamlarını hatırlamazlar. Dış dünyayla bağlantıları yoktur. Öğretmenler değil, gözetmenler tarafından eğitilirler. Spor ve sanata büyük önem veren gözetmenler, Hailsham öğrencilerine sürekli özel olduklarını hatırlatır ve bedenlerine çok iyi bakmaları gerektiğini tekrarlar. Kazuo Ishiguro, yayımlandığı yıl Time tarafından İngilizce yazılmış en iyi 100 roman listesine alınan Beni Asla Bırakma'da, yıkıma götüreceğini bile bile kendi kaderini kabullenenlere odaklanmış görünüyor.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/yukio.png" alt="Bahar Karları" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Bahar Karları</h3>
+                                            <p class="author">Yukio MISHIMA</p>
+                                            <p class="text-justify">"Bahar Karları" yazarın "Bereket Denizi" adlı dörtlemesinin ilk kitabı. Yapıtları "Proust", "Gide" ve "Sartre"ın yapıtlarıyla karşılaştırılan, cesaret ve erkeksi niteliklerle olan tutkusyla Hemingway'e benzetilen Yukio Mişima, bu kitabında 1912 yılında Tokyo'da İmparatorluk Sarayının köklü soylu sınıfının kapalı çevresinde, sırtlarında geleneğin ağır yükünü taşımayan zengin ailelerin, paraları sayesinde toplumsal ve siyasal güç aramalarını anlatır...</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/yang.png" alt="Elveda Kızlar Ülkesi" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>Elveda Kızlar Ülkesi</h3>
+                                            <p class="author">İhsan Oktay ANAR</p>
+                                            <p class="text-justify">Çin sınırları içerisinde yer alan Moso bölgesi, "Kızlar Ülkesi" olarak biliniyor. Bu kültürde kız çocukları erkeklerden daha değerli kabul ediliyor, evlilik geri kafalılık olarak nitelendiriliyor ve dillerinde "baba" diye bir kelime yok. Zaten mal mülk de anneden kıza geçiyor. Elveda Kızlar Ülkesi, Himalaya Dağları’nın gölgesindeki bu bölgede yetişen bir kızın gerçek hikâyesini anlatıyor. Namu, kendi köyünde, çok ağladığı için annesi tarafından üç kez başkasına verilmeye çalışılan, ama verilemeyen kız olarak tanınıyor. Biraz büyüyünce, kendi köyünü çok sevmekle birlikte, köyü çeviren dağların arkasındaki dünyanın nasıl olduğunu merak etmeye başlıyor. Çinli yetkililer yetenekli şarkıcılar aramak için köylerine gelince, Namu fırsatı değerlendirip Moso kültürünü ayakta tutan en büyük geleneğe karşı geliyor: Annesinin evini terk ediyor.</p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                    <hr />
+                                    <div class="row book">
+                                        <div class="col-md-4 col-xs-12">
+                                            <img src="~/img/books/murakami2.png" alt="İmkansızın Şarkısı" class="img-thumbnail" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h3>İmkansızın Şarkısı</h3>
+                                            <p class="author">Haruki MURAKAMI</p>
+                                            <p class="text-justify">Bir yolculuk sırasında Beatles'ın "Norwegian Wood" adlı parçasını duyan kahramanımız 37 yaşındadır ve bu parça onu Tokyo'da geçirdiği üniversite yıllarına götürecektir. En yakın arkadaşının intihar edişi, geçen zamanın ardından onun kız arkadaşıyla yakınlaşması, araya giren zorunlu ayrılık ve yeni bir kız arkadaş. "İmkânsızın Şarkısı" yalın, çarpıcı ve sıcak bir aşk hikâyesini anlatıyor. Yazarı HARUKİ Murakami Japon edebiyatının aykırı, ama en çok okunan yazarı. Japon geleneklerinin dışında geliştirdiği üslubuyla adından çok söz ettiren Murakami'yi dünyaya tanıtan roman "İmkânsızın Şarkısı". </p>
+
+                                        </div>
+                                        <div class="col-md-6 col-xs-12"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- Form Modal -->
+            <div class="portfolio-modal modal fade" id="formModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <div class="modal-body">
+                                        @Html.Partial("JoinUs")
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- jQuery -->
+            <script src="~/vendor/jquery/jquery.min.js"></script>
+            <!-- Bootstrap Core JavaScript -->
+            <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+            <!-- Plugin JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+            <!-- Contact Form JavaScript -->
+            <script src="~/js/jqBootstrapValidation.js"></script>
+            <script src="~/js/contact_me.js"></script>
+            <script src="~/js/join_us.js"></script>
+            <!-- Theme JavaScript -->
+            <script src="~/js/agency.js"></script>
+    <script>
+        $('#divShowAll').click(function () {
+            $('#divThemes').addClass('show-all');
+        });
+    </script>
+</body>
+</html>

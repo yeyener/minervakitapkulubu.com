@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1-*",
+
+  "dependencies": {
+    "Microsoft.Extensions.Logging": "1.0.0",
+    "NLog": "4.4.0-betaV15",
+    "Evorine.Extensions.Abstractions": "*"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+﻿@model Minerva.Web.Models.JoinUsModel
+@{ 
+    Layout = null;
+}
+
+<h2>Üye Başvuru Formu</h2>
+<form id="formJoin" class="form-horizontal" action="/Contact/JoinUs" method="post" novalidate>
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-md-4">Ad Soyad</label>
+            <div class="col-xs-12 col-md-3">
+                <input name="FirstName" class="form-control" required data-validation-required-message="Lütfen adınızı giriniz." />
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <input name="LastName" class="form-control" required data-validation-required-message="Lütfen soyadınızı giriniz." />
+            </div>
+        </div>
+   </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-md-4">Doğum Tarihi</label>
+            <div class="col-xs-12 col-md-2">
+                <select name="BirthDateDay" class="form-control">
+                    @for (int i = 1; i <= 31; i++)
+                    {
+                        <option value="@i">@i</option>
+                    }
+                </select>
+            </div>
+            <div class="col-xs-12 col-md-2">
+                <select name="BirthDateMonth" class="form-control">
+                    @for (int i = 1; i <= 12; i++)
+                    {
+                        <option value="@i">@i</option>
+                    }
+                </select>
+            </div>
+            <div class="col-xs-12 col-md-2">
+                <select name="BirthDateYear" class="form-control">
+                    @for (int i = 1950; i <= 2010; i++)
+                    {
+                        <option value="@i">@i</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-md-4">Meslek (öğrenci iseniz bölümü de belirtiniz)</label>
+            <div class="col-xs-12 col-md-4">
+                <input name="Occupation" class="form-control" required data-validation-required-message="Lütfen mesleğinizi giriniz.">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-md-4">Mail</label>
+            <div class="col-xs-12 col-md-3"><input name="Email" class="form-control" required data-validation-required-message="Lütfen emailinizi giriniz." /></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-md-4">GSM</label>
+            <div class="col-xs-12 col-md-3"><input name="Gsm" class="form-control" required data-validation-required-message="Lütfen telefon numaranızı giriniz." /></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-md-4">Okuduğunuz Son Üç Kitap</label>
+            <div class="col-xs-12 col-md-5">
+                <div><input name="LastBook1" class="form-control" /></div>
+                <div><input name="LastBook2" class="form-control" /></div>
+                <div><input name="LastBook3" class="form-control" /></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-md-4">Favori Kitabınız</label>
+            <div class="col-xs-12 col-md-4"><input name="FavoriteBook" class="form-control" /></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-md-4">Neden</label>
+            <div class="col-xs-12 col-md-7"><input name="FavoriteBookReason" class="form-control" /></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-md-4">Okumayı Sevdiğiniz Tür ve Yazar Örnekleri</label>
+            <div class="col-xs-12 col-md-4">
+                <div><input name="PreferedType1" class="form-control" /></div>
+                <br />
+                <div><input name="PreferedAuthor1" class="form-control" /></div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div><input name="PreferedType2" class="form-control" /></div>
+                <br />
+                <div><input name="PreferedAuthor2" class="form-control" /></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-md-4">Neden Kitap Kulübü</label>
+            <div class="col-xs-12 col-md-6"><textarea name="WhyBookClub" rows="4" class="form-control" required data-validation-required-message="Lütfen neden kitap kulübünü tercih ettiğinizi yazınız."></textarea></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-md-4">Eklemek İstedikleriniz</label>
+            <div class="col-xs-12 col-md-6"><textarea name="Extra" rows="4" class="form-control"></textarea></div>
+        </div>
+    </div>
+
+
+
+
+    <p>Lütfen üye başvurusu yapabilmek için yukarıdaki bütün bilgileri doldurunuz ve aşağıdaki şartları kabul ediniz.</p>
+    <ul id="ruleset">
+        <li><label><input name="Rule1" type="checkbox" value="true" required data-validation-required-message="Lütfen toplantılara en az iki ayda bir katılım sağlayacağınızı kabul ediniz." /><span class="lbl"></span>Toplantılara en az iki ayda bir katılım sağlayacağım.</label></li>
+        <li><label><input name="Rule2" type="checkbox" value="true" required data-validation-required-message="Lütfen toplantılara katılamayacağınız durumlarda önceden ilgililere haber vereceğinizi kabul ediniz." /><span class="lbl"></span>Toplantıya katılamayacağım durumlarda önceden ilgililere haber vereceğim.</label></li>
+        <li><label><input name="Rule3" type="checkbox" value="true" required data-validation-required-message="Lütfen toplantılara en yorumlarınızı saygı çerçevesinde yapacağınızı kabul ediniz." /><span class="lbl"></span>Yorumlarımı saygı çerçevesinde yapacağım.</label></li>
+        <li><label><input name="Rule4" type="checkbox" value="true" required data-validation-required-message="Lütfen toplantılara Mücahit'in herzaman haklı olduğunu kabul ediniz." /><span class="lbl"></span>Mücahit'in herzaman haklı olduğunu kabul ediyorum.</label> (<a href="https://google.com?q=mucahit+akdag">Mücahit kimdir?</a>)</li>
+        <li><label><input name="Rule5" type="checkbox" value="true" required data-validation-required-message="Lütfen toplantılara toplantılara eli boş gelmeyeceğinizi kabul ediniz." /><span class="lbl"></span>Toplantılara eli boş gelmeyeceğim.</label></li>
+        <li><label><input name="Rule6" type="checkbox" value="true" required data-validation-required-message="Lütfen FETÖ ile hiçbir ilişkinizin olmadığını kabul ediniz." /><span class="lbl"></span>FETÖ ile hiçbir ilişkim yoktur.</label></li>
+    </ul>
+
+    <ul id="joinUsErrors" class="text-left alert alert-danger" style="display: none;"></ul>
+    <div id="joinUsSuccess" class="text-left alert alert-success" style="display: none;"></div>
+
+    <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Başvur</button>
+</form>
