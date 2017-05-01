@@ -9,12 +9,25 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System.Globalization;
 using Evorine.Engine;
+using Microsoft.Extensions.Configuration;
 
 namespace Minerva.Web
 {
     public class Startup
     {
         EngineRegistrar registrar;
+
+        public IConfiguration Configuration { get; }
+
+        public Startup(IHostingEnvironment hostingEnvironment)
+        {
+            var builder = new ConfigurationBuilder()
+                          .SetBasePath(hostingEnvironment.ContentRootPath)
+                          .AddJsonFile("settings.json")
+                          .AddEnvironmentVariables();
+
+            Configuration = builder.Build();
+        }
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
@@ -25,6 +38,12 @@ namespace Minerva.Web
                      .AddSession(TimeSpan.FromMinutes(5))
                      .AddLogging()
                      .AddLocalization<Core.CultureProvider, Core.TranslationCategoryProvider>();
+
+
+            var awsOptions = Configuration.GetAWSOptions();
+            services.AddDefaultAWSOptions(awsOptions);
+            services.AddAWSService<Amazon.SimpleEmail.IAmazonSimpleEmailService>();
+
 
             registrar.AddMvc((config) => { });
 

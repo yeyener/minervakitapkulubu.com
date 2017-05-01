@@ -12,11 +12,15 @@
     "Microsoft.AspNetCore.Session": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.0.0",
     "Microsoft.AspNetCore.StaticFiles": "1.0.0",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0",
     "MailKit": "1.10.0",
     "Evorine.Data.EntityFramework.SqlServer": "*",
     "Evorine.Abstractions": "*",
     "Evorine.Engine": "*",
-    "AWSSDK.SimpleEmail": "3.3.1.5"
+    "AWSSDK.SimpleEmail": "3.3.1.9",
+    "AWSSDK.Extensions.NETCore.Setup": "3.3.0.3",
+    "AWSSDK.Core": "3.3.13.2"
   },
 
   "tools": {
@@ -47,7 +51,8 @@
     "include": [
       "wwwroot",
       "web.config",
-      "Views"
+      "Views",
+      "settings.json"
     ]
   },
 
