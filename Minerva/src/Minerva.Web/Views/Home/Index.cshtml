@@ -1,4 +1,6 @@
-﻿@inject ICultureProvider CultureProvider
+﻿@using Minerva.Web.Models
+@model MainModel
+@inject ICultureProvider CultureProvider
 @{
     ViewBag.Title = "Minerva Kitap Kulübü";
     Layout = null;
@@ -147,6 +149,8 @@
         </div>
     </section>
     <!-- Portfolio Grid Section -->
+<!-- temalar -->
+    
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -156,6 +160,24 @@
                 </div>
             </div>
             <div class="row" id="divThemes">
+                
+                
+                @*<div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioDinamik1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="~/img/portfolio/soviets.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>@Html.DisplayFor(model => model.ThemeModel.Name)</h4> 
+                        <p class="text-muted">Dinamik tarih</p>
+                    </div>
+                </div>*@
+
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModalSovyet" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -305,8 +327,11 @@
                 </div>
             </div>
         </div>
-</section>
-    <!-- About Section -->
+    </section>
+    
+
+    
+<!-- About Section -->
     <section id="announcements">
         <div class="container">
             <div class="row">
@@ -551,76 +576,78 @@
             </div>
         </div>
     </div>
+    
 
-    <div class="portfolio-modal modal fade" id="portfolioModalModernizm" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
+<div class="portfolio-modal modal fade" id="portfolioModalModernizm" tabindex="-1" role="dialog" aria-hidden="true">
+    
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body books">
-                                <!-- Project Details Go Here -->
-                                <h2 class="">Türk Edebiyatında Modernizm</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body books">
+                            <!-- Project Details Go Here -->
+                            <h2 class="">Türk Edebiyatında Modernizm</h2>
 
-                                <p class="item-intro text-muted">Şubat-Mart 2017</p>
+                            <p class="item-intro text-muted">Şubat-Mart 2017</p>
+                            <div class="row book">
                                 <div class="row book">
-                                    <div class="row book">
-                                        <div class="col-md-4 col-xs-12">
-                                            <img src="~/img/books/hakkari.png" alt="Hakkari'de Bir Mevsim'" class="img-thumbnail" />
-                                        </div>
-                                        <div class="col-md-8 col-xs-12">
-                                            <h3>Hakkari'de Bir Mevsim</h3>
-                                            <p class="author">Ferit EDGÜ</p>
-                                            <p class="text-justify">Ferid Edgü’nün güçlü ve etkileyici diliyle yazılmış gerçekçi bir romandır, “O/Hakkari’de Bir Mevsim”. Okurken kendinizi bir an aşılmayan sarp kayalara kurulmuş karlar altındaki köyde bulursunuz. Bir o kadar gerçekçi ve bir o kadar da acımasızdır kitap. Ferit Edgü’nün Hakkari’de geçirdiği yılları da baz alırsak bir nevi otobiyografi de diyebiliriz. 1983 yılında Onat Kutlar’ın senaryosu ile Erden Kıral romanı beyaz perdeye taşımış ve Berlin Film Festivali’nden ödülle dönmüştür. Hem kitap hem de film sanat dünyasının vazgeçilmezleri arasındadır.</p>
-
-                                        </div>
-                                        <div class="col-md-6 col-xs-12"></div>
+                                    <div class="col-md-4 col-xs-12">
+                                        <img src="~/img/books/hakkari.png" alt="Hakkari'de Bir Mevsim'" class="img-thumbnail"/>
                                     </div>
-                                    <hr />
-                                    <div class="row book">
-                                        <div class="col-md-4 col-xs-12">
-                                            <img src="~/img/books/anayurt.png" alt="Anayurt Oteli" class="img-thumbnail" />
-                                        </div>
-                                        <div class="col-md-8 col-xs-12">
-                                            <h3>Anayurt Oteli</h3>
-                                            <p class="author">Yusuf ATILGAN</p>
-                                            <p class="text-justify">Yusuf Atılgan'ın bu alandaki şöhretinin hakkını verir şekilde psikolojik yabancılaşma ve yalnızlık konuları başarıyla işlenmiştir. Romanda birbirine benzeyen, geçici ilişkilerle geçen günlerle dolu; yalnız, tek başına ve küçük ayrıntıların tekdüze şaşmazlığında sürüklenen bir hayatın, gecikmeli Ankara treniyle gelen -adını bile bilmediğimiz- kadının otelde bir gece kalmasıyla değişmesi ve bu değişimin sonuçları anlatılıyor. Bu roman aynı adla, 1987'de yönetmen Ömer Kavur tarafından beyaz perdeye aktarılmış, bu film de tüm zamanların en iyi 3. Türk filmi seçilmiştir.</p>
+                                    <div class="col-md-8 col-xs-12">
+                                        <h3>Hakkari'de Bir Mevsim</h3>
+                                        <p class="author">Ferit EDGÜ</p>
+                                        <p class="text-justify">Ferid Edgü’nün güçlü ve etkileyici diliyle yazılmış gerçekçi bir romandır, “O/Hakkari’de Bir Mevsim”. Okurken kendinizi bir an aşılmayan sarp kayalara kurulmuş karlar altındaki köyde bulursunuz. Bir o kadar gerçekçi ve bir o kadar da acımasızdır kitap. Ferit Edgü’nün Hakkari’de geçirdiği yılları da baz alırsak bir nevi otobiyografi de diyebiliriz. 1983 yılında Onat Kutlar’ın senaryosu ile Erden Kıral romanı beyaz perdeye taşımış ve Berlin Film Festivali’nden ödülle dönmüştür. Hem kitap hem de film sanat dünyasının vazgeçilmezleri arasındadır.</p>
 
-                                        </div>
-                                        <div class="col-md-6 col-xs-12"></div>
                                     </div>
-                                    <hr />
-                                    <div class="row book">
-                                        <div class="col-md-4 col-xs-12">
-                                            <img src="~/img/books/SessizEv.png" alt="Sessiz Ev" class="img-thumbnail" />
-                                        </div>
-                                        <div class="col-md-8 col-xs-12">
-                                            <h3>Sessiz Ev</h3>
-                                            <p class="author">Orhan PAMUK</p>
-                                            <p class="text-justify">Sessiz Ev'de Orhan Pamuk, dağılmakta olan bir ailenin hikâyesi üzerinden Cumhuriyet ve modernleşme tarihimizin barındırdığı gizli çatışmaları ve şiddeti araştırıyor. Orhan Pamuk, yayımlanışından otuz yıl sonra bu yeni baskıda romana bölüm başlıkları koydu ve anlatıdaki bazı tekrarları ayıklayarak kitabı yeni okurlar için daha okunaklı hale getirdi.Biri tarihçi, biri devrimci, biri de zengin olmayı aklına koymuş üç torun İstanbul yakınlarındaki Cennethisar kasabasındaki evinde babaannelerini ziyaret ederler. Dedelerinin yetmiş yıl önce siyasi sürgün olarak kasabaya geldiğinde yaptırdığı bu evde bir hafta kalırlar. Bu sürede, babaannelerinin doksan yıllık anılarla yüklü geçmişi ağır ağır aralanırken, dedenin Doğu ile Batı arasındaki uçurumu bir çırpıda kapatacağını sandığı büyük bir ansiklopediyi yazışı hatırlanır. Evde sessiz gözlemleriyle kuşaklar arasında köprü kuran tanıklar, bahçe duvarlarının ötesinde ise aile ile ilgilenen tutkulu gençlerin hareketleri vardır. Orhan Pamuk'un ikinci romanı olan Sessiz Ev, yayımlandığında büyük heyecanla karşılanmış, pek çok dile çevrilmiş ve ödüller almıştır.</p>
+                                    <div class="col-md-6 col-xs-12"></div>
+                                </div>
+                                <hr/>
+                                <div class="row book">
+                                    <div class="col-md-4 col-xs-12">
+                                        <img src="~/img/books/anayurt.png" alt="Anayurt Oteli" class="img-thumbnail"/>
+                                    </div>
+                                    <div class="col-md-8 col-xs-12">
+                                        <h3>Anayurt Oteli</h3>
+                                        <p class="author">Yusuf ATILGAN</p>
+                                        <p class="text-justify">Yusuf Atılgan'ın bu alandaki şöhretinin hakkını verir şekilde psikolojik yabancılaşma ve yalnızlık konuları başarıyla işlenmiştir. Romanda birbirine benzeyen, geçici ilişkilerle geçen günlerle dolu; yalnız, tek başına ve küçük ayrıntıların tekdüze şaşmazlığında sürüklenen bir hayatın, gecikmeli Ankara treniyle gelen -adını bile bilmediğimiz- kadının otelde bir gece kalmasıyla değişmesi ve bu değişimin sonuçları anlatılıyor. Bu roman aynı adla, 1987'de yönetmen Ömer Kavur tarafından beyaz perdeye aktarılmış, bu film de tüm zamanların en iyi 3. Türk filmi seçilmiştir.</p>
 
-                                        </div>
-                                        <div class="col-md-6 col-xs-12"></div>
                                     </div>
-                                    <hr />
-                                    <div class="row book">
-                                        <div class="col-md-4 col-xs-12">
-                                            <img src="~/img/books/kuslar.png" alt="Kuşlar Yasına Gider" class="img-thumbnail" />
-                                        </div>
-                                        <div class="col-md-8 col-xs-12">
-                                            <h3>Kuşlar Yasına Gider</h3>
-                                            <p class="author">Hasan Ali TOPTAŞ</p>
-                                            <p class="text-justify">Pırıl pırıl ışıyan Türkçesiyle Hasan Ali Toptaş, Kuşlar Yasına Gider'de romancılığına yeni bir boyut katıyor: anlatmıyor, söylemiyor; nefeslendiriyor.Kadirşinas otlarının mırıltısını, of dememenin ilmini, eldeyken kıymetini bilmenin erdemini, ömürden giden günlerin sabrını okudukça zihnimiz, gönlümüz havalanıyor.</p>
+                                    <div class="col-md-6 col-xs-12"></div>
+                                </div>
+                                <hr/>
+                                <div class="row book">
+                                    <div class="col-md-4 col-xs-12">
+                                        <img src="~/img/books/SessizEv.png" alt="Sessiz Ev" class="img-thumbnail"/>
+                                    </div>
+                                    <div class="col-md-8 col-xs-12">
+                                        <h3>Sessiz Ev</h3>
+                                        <p class="author">Orhan PAMUK</p>
+                                        <p class="text-justify">Sessiz Ev'de Orhan Pamuk, dağılmakta olan bir ailenin hikâyesi üzerinden Cumhuriyet ve modernleşme tarihimizin barındırdığı gizli çatışmaları ve şiddeti araştırıyor. Orhan Pamuk, yayımlanışından otuz yıl sonra bu yeni baskıda romana bölüm başlıkları koydu ve anlatıdaki bazı tekrarları ayıklayarak kitabı yeni okurlar için daha okunaklı hale getirdi.Biri tarihçi, biri devrimci, biri de zengin olmayı aklına koymuş üç torun İstanbul yakınlarındaki Cennethisar kasabasındaki evinde babaannelerini ziyaret ederler. Dedelerinin yetmiş yıl önce siyasi sürgün olarak kasabaya geldiğinde yaptırdığı bu evde bir hafta kalırlar. Bu sürede, babaannelerinin doksan yıllık anılarla yüklü geçmişi ağır ağır aralanırken, dedenin Doğu ile Batı arasındaki uçurumu bir çırpıda kapatacağını sandığı büyük bir ansiklopediyi yazışı hatırlanır. Evde sessiz gözlemleriyle kuşaklar arasında köprü kuran tanıklar, bahçe duvarlarının ötesinde ise aile ile ilgilenen tutkulu gençlerin hareketleri vardır. Orhan Pamuk'un ikinci romanı olan Sessiz Ev, yayımlandığında büyük heyecanla karşılanmış, pek çok dile çevrilmiş ve ödüller almıştır.</p>
 
-                                        </div>
-                                        <div class="col-md-6 col-xs-12"></div>
                                     </div>
+                                    <div class="col-md-6 col-xs-12"></div>
+                                </div>
+                                <hr/>
+                                <div class="row book">
+                                    <div class="col-md-4 col-xs-12">
+                                        <img src="~/img/books/kuslar.png" alt="Kuşlar Yasına Gider" class="img-thumbnail"/>
+                                    </div>
+                                    <div class="col-md-8 col-xs-12">
+                                        <h3>Kuşlar Yasına Gider</h3>
+                                        <p class="author">Hasan Ali TOPTAŞ</p>
+                                        <p class="text-justify">Pırıl pırıl ışıyan Türkçesiyle Hasan Ali Toptaş, Kuşlar Yasına Gider'de romancılığına yeni bir boyut katıyor: anlatmıyor, söylemiyor; nefeslendiriyor.Kadirşinas otlarının mırıltısını, of dememenin ilmini, eldeyken kıymetini bilmenin erdemini, ömürden giden günlerin sabrını okudukça zihnimiz, gönlümüz havalanıyor.</p>
+
+                                    </div>
+                                    <div class="col-md-6 col-xs-12"></div>
                                 </div>
                             </div>
                         </div>
@@ -629,6 +656,7 @@
             </div>
         </div>
     </div>
+</div>
     
     <div class="portfolio-modal modal fade" id="portfolioModalBalkan" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">

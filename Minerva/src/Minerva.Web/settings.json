@@ -1,6 +1,8 @@
 ﻿{
   "AWS": {
-    "Profile": "minerva",
-    "Region": "us-west-2"
+    "Profile": "minervauser",
+    "Region": "us-west-2",
+    "AccessKey": "AKIAI2MAOO7BCU5JKAHA"
   }
 }
+
